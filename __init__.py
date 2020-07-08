@@ -981,7 +981,7 @@ class KodiSkill(MycroftSkill):
             LOG.info('User responded with...' + message.data.get('NoKeyword'))
             self.speak_dialog('cancel', expect_response=False)
 
-    # the currently listed move was selected to play
+    # the currently listed movie was selected to play
     @intent_handler(IntentBuilder('NavigatePlayIntent').require('ListContextKeyword').require("PlayKeyword").
                     build())
     def handle_navigate_play_intent(self, message):
