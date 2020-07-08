@@ -12,15 +12,15 @@ The Kodi Skill uses conversational dialog to help you to control your KODI insta
 * "ask kodi to play all shook up"
 * "ask kodi to play the album appeal to reason"
 ###Movies
-* "ask kodi to play the movie guardians of the galaxy"
-* "ask kodi to play the film planet of the apes"
-* "ask kodi to play a random movie"
+* "begin the movie guardians of the galaxy"
+* "show the film planet of the apes"
+* "start a random movie"
 * "turn kodi subtitles on"
 * "turn kodi subtitles off"
 * "skip kodi forward"
 * "skip kodi backward"
 * "pause kodi"
-* "pause the film"
+* "pause the movie"
 * "re-start kodi"
 * "stop the movie"
 * "stop kodi"
@@ -45,14 +45,14 @@ The Kodi Skill uses conversational dialog to help you to control your KODI insta
 ## Conversational Context
 ** If mycroft.ai locates more than one movie that matches your request it will permit you to itterate through your requests
 using conversational context.
-* eg. "hey mycroft:"
-* Request: "ask kodi to play the move Iron Man"
-* Response: "I have located 3 movies with the name Iron Man, would you like me to list them?"
+* eg. "jarvis:"
+* Request: "begin the move Iron Man"
+* Response: "I have located 3 movies with the name Iron Man, would you like me to list them for you?"
 * Request: "yes" / "no"
-* Response: "Iron Man, to Skip, say Next, say play, to play, or Cancel, to stop"
+* Response: "Iron Man,To Skip this movie, say Next, or to Start this movie, Say start, or if you're undecided, say Stop
 * Request: "next" / "skip"
 * Response: "Iron Man 2"
-* Request: "play" / "select"
+* Request: "start" / "select"
 * Response: "o-k, attempting to play, Iron Man 2"
 ## Cinemavision Addon
 If mycroft.ai locates the addon CinemaVision it will prompt the user if this addon should be used during the 
@@ -61,10 +61,10 @@ playback of the movie that was selected.
 * Request: "yes / no"
 ## Youtube Addon
 * Request: "ask kodi to play some Elton John from youtube
-* Request: "ask kodi to Play the official captain marvel trailer from youtube"
+* Request: "ask kodi to show the official captain marvel trailer from youtube"
 * Request: "Stop kodi"
 ## Credits 
-* PCWii
+* forked from PCWii
 * Original work forked from https://github.com/Cadair/mycroft-kodi
 ## Category
 **Media**
