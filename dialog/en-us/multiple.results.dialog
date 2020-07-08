@@ -1,2 +1,3 @@
-I found, {{result}} , results, would you like me to list them?
-There were, {{result}}, results, would you like me to list them
+I found, {{result}} , results, would you like me to list them for you?
+There were, {{result}}, results, would you like me to list them for you?
+Would you like me to list the, {{result}}, results, I found?
