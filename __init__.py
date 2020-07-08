@@ -816,7 +816,7 @@ class KodiSkill(MycroftSkill):
                 self.on_websettings_changed()
 
     # Primary Play Movie request - now handles music and films with optionally
-    @intent_handler(IntentBuilder('PlayLocalIntent').require("AskKeyword").require("KodiKeyword").
+    @intent_handler(IntentBuilder('PlayLocalIntent').require("KodiKeyword").
                     require("PlayKeyword").optionally("FilmKeyword").
                     optionally("CinemaVisionKeyword").optionally('RandomKeyword').build())
     def handle_play_local_intent(self, message):
