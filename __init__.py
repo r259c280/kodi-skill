@@ -816,7 +816,7 @@ class KodiSkill(MycroftSkill):
                 self.on_websettings_changed()
 
     # Primary Play Movie request - now handles music and films with optionally
-    @intent_handler(IntentBuilder('PlayLocalIntent').require("AskKeyword").require("KodiKeyword").
+    @intent_handler(IntentBuilder('PlayLocalIntent').require("KodiKeyword").
                     require("PlayKeyword").optionally("FilmKeyword").
                     optionally("CinemaVisionKeyword").optionally('RandomKeyword').build())
     def handle_play_local_intent(self, message):
@@ -981,7 +981,7 @@ class KodiSkill(MycroftSkill):
             LOG.info('User responded with...' + message.data.get('NoKeyword'))
             self.speak_dialog('cancel', expect_response=False)
 
-    # the currently listed move was selected to play
+    # the currently listed movie was selected to play
     @intent_handler(IntentBuilder('NavigatePlayIntent').require('ListContextKeyword').require("PlayKeyword").
                     build())
     def handle_navigate_play_intent(self, message):
